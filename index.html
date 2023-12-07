@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> 
+       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+
+
+     function wishclick(){
+        var name=document.getElementById("name").value;
+        var error=document.querySelector("p");
+        var btn =document.getElementById("#btn");
+     
+       
+
+if(name==""){
+    error.innerHTML="please Enter Your Name".fontcolor("red")
+}
+else{
+    document.write(`<i>Azlan Says Thank You</i> ${name}`.fontcolor("green").fontsize("5"));
+    image.src="public/images/azlan.jpg"
+
+}
+     
+     }
+    </script>
+ <style>
+   
+  
+           
+
+   
+ </style>
+</head>
+<body class="container-fluid d-flex justify-content-center align-items-center" style="height: 100vh;">
+    <div class="w-25">
+        <img class="card-img-top"  src="../public/images/azlan.jpg" alt="">
+    <input id="name" class="form-control" type="text" placeholder="Enter Your Name">
+    <p></p>
+    <button id="btn" onclick="wishclick()" class="btn btn-warning w-100">Wish To Azlan</button>
+    </div>
+</body>
+</html>
